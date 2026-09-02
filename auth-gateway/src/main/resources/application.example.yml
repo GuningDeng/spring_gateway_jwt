@@ -1,0 +1,14 @@
+# server:
+#     port: PORT_NUMBER
+
+# spring:
+#     application:
+#         name: YOUR_APP_NAME
+#     Your gateway configuration
+
+# app:
+#     jwt:
+#         your jwt configuration
+        
+                    
+                    
