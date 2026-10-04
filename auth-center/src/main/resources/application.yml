@@ -1,0 +1,34 @@
+server:
+    # server port
+    port: 0000
+
+spring:
+    application:
+        name: auth-center
+    h2:
+        console.enabled: true
+    datasource:
+        url: jdbc:h2:mem:dcbapp
+        driver-class-name: org.h2.Driver
+        username: username
+        password: your_password
+    jpa: 
+        # spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+        database-platform: org.hibernate.dialect.H2Dialect
+    data.redis:
+        host: localhost
+        port: 000000000
+    cache:
+        type: redis
+
+app:
+    jwt:
+        issuer: issuer_name
+        secret: your_secret
+        access-ttl-minutes: xxxx
+        refresh-ttl-days: xxxx
+        clock-skew-seconds: xxx
+    cors:
+        allowed-origins: "*"
+        allowed-methods: " "
+        allowed-headers: " "
